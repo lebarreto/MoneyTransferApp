@@ -1,9 +1,11 @@
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import styled, { css } from 'styled-components';
+import { NavLink } from 'react-router-dom';
 
-export const Container = styled.div`
-  margin: 60px 90px;
-`;
+interface ActiveProps {
+  active?: boolean;
+}
+
+export const Container = styled.div``;
 
 export const Header = styled.div`
   display: flex;
@@ -28,12 +30,28 @@ export const Code = styled.p`
   margin-bottom: 25px;
 `;
 
-export const Menu = styled(Link)`
+export const Menu = styled(NavLink)<ActiveProps>`
   margin-top: 15px;
   display: flex;
   align-items: center;
   text-decoration: none;
   margin-bottom: 10px;
+
+  svg {
+    color: #3e4c59;
+  }
+
+  ${(props) =>
+    props.active &&
+    css`
+      svg {
+        color: #e8368f;
+      }
+
+      p {
+        color: #e8368f;
+      }
+    `}
 `;
 
 export const Text = styled.p`
@@ -42,4 +60,9 @@ export const Text = styled.p`
   font-size: 16px;
   line-height: 19px;
   margin-left: 20px;
+`;
+
+export const Footer = styled.footer`
+  padding-top: 60px;
+  height: 60px;
 `;

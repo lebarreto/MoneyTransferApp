@@ -60,9 +60,9 @@ export const Text = styled.p`
   font-size: 16px;
   line-height: 19px;
   margin-left: 20px;
+  margin-top: 20px;
 `;
 
 export const Footer = styled.footer`
-  padding-top: 60px;
-  height: 60px;
+  padding-top: 40px;
 `;

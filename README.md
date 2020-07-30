@@ -2,10 +2,6 @@
   Money Transfer App
 </h3>
 
-<h3 align="center">
-  The application aims to deliver an awesome user experience allowing sending money abroad.
-</h3>
-
 <p align="center">
   <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-instalação-e-execução-do-frontend">Instalação e execução do Frontend</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
